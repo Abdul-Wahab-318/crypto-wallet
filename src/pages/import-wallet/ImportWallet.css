@@ -1,0 +1,8 @@
+.recovery-field{
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 5px;
+}
+
+.recovery-field:focus{
+    order: 1px solid var(--bs-blue); 
+}
