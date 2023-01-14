@@ -1,0 +1,18 @@
+.blur-effect{
+    filter: blur(3px);
+}
+.phrase-container
+{
+    position: relative;
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+.hidden-placeholder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}

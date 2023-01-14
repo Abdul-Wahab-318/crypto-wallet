@@ -12,6 +12,7 @@ import Logo from './components/Logo';
 import Intro from './pages/intro/Intro';
 import ImportWallet from './pages/import-wallet/ImportWallet';
 import NewWallet from './pages/new-wallet/NewWallet';
+import RecoveryPhrase from './pages/recovery-phrase/RecoveryPhrase';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
               <Route exact path = "/import-wallet" element = { <ImportWallet/> } />
 
               <Route exact path = "/create-wallet" element = { <NewWallet/> } />
+
+              <Route exact path = "/recovery-phrase" element = { <RecoveryPhrase/> } />
 
               <Route exact path = "/register" element= { <Register/> }  />
 

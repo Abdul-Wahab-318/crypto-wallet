@@ -1,17 +1,12 @@
 import React from 'react'
-import Logo from '../../components/Logo'
-import left from '../../images/chevron-left.png'
+import IntroHeader from '../../components/intro-header/IntroHeader'
 import "./ImportWallet.css"
 
 export default function ImportWallet() {
   return (
     <div className='import-wallet-page'>
         <div className="custom-container">
-            <header className="intro-header d-flex justify-content-start">
-                    <Logo/>                    
-            </header>
-            <a href="#/" className='back-btn text-black d-flex align-items-center gap-1 mt-2'> <img src={left} width={10} alt="" /> Back</a>
-
+            <IntroHeader/>
             <div className="import-wallet-content">
                 <div className="content-heading">
                     <h1 className="mt-2 mb-4 pb-2">

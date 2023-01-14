@@ -39,3 +39,23 @@ a{
   border-radius: 100px;
   color: white;
 }
+
+.btn-3{
+  display: inline-block;
+  font-size: 14px;
+  margin: 35px 0 0px;
+  padding: 10px 60px 11px 60px;
+  background-color: #037dd6;
+  border-radius: 100px;
+  color: white;
+}
+.btn-3-inverted{
+  display: inline-block;
+  font-size: 14px;
+  margin: 35px 0 0px;
+  padding: 10px 30px 11px 30px;
+  background-color: white;
+  border-radius: 100px;
+  border: 1px solid #037dd6;
+  color: #037dd6;
+}
