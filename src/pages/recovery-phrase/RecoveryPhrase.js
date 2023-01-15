@@ -29,8 +29,8 @@ export default function RecoveryPhrase() {
                             { hidden ? <p className='hidden-placeholder fw-bold fs-5'>Click to Reveal </p> : <></>}
                         </section>
 
-                        <a href="" className="btn-3-inverted d-inline-block me-2">Remind me later</a>
-                        <a href="" className="btn-3">Next</a>
+                        <a href="#/home" className="btn-3-inverted d-inline-block me-2">Remind me later</a>
+                        <a href="#/confirm-recovery-phrase" className="btn-3">Next</a>
 
                     </div>
                     <div className="col-4 fs-14">

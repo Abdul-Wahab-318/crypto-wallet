@@ -1,0 +1,22 @@
+.create-account-page{
+    background-color: #F2F4F6;
+    min-height: 100vh;
+}
+
+.new-account{
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 4px 0px rgb(221, 221, 221);
+}
+
+.new-account input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 4px;
+}
+.new-account-form {
+
+    padding: 30px;
+    background-color: white;
+}

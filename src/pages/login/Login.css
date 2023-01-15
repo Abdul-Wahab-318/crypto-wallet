@@ -1,0 +1,16 @@
+.login-header{
+    background-color: #F2F4F6;
+    padding: 20px ;
+}
+.login-content{
+    max-width: 300px ;
+    margin: 0 auto;
+}
+.login-password-field{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    outline: none !important;
+    width: 100%;
+    border: 0;
+    border-bottom : 2px solid #037DD6
+}

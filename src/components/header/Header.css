@@ -1,0 +1,64 @@
+.header-inner
+{
+    padding: 2% 0;
+    min-width: 320px;
+    box-sizing: content-box;
+}
+
+.network-pill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgb(183, 180, 180);
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+.network-pill .circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #29B6AF;
+}
+
+.profile-pic-container{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #037DD6;
+    overflow: hidden;
+    cursor: pointer;
+}
+.profile-dropdown-parent{
+    position: relative;
+}
+.profile-dropdown{
+    min-width: 320px;
+    position: absolute;
+    bottom: 0px ;
+    right: 0;
+    transform: translate(00% , 101%);
+    list-style-type: none;
+    background-color: white;
+    padding: 15px 0 ;
+}
+
+.account-item{
+    padding: 0 15px 16px 15px ;
+    border-bottom: 1px solid rgb(187, 185, 185);
+}
+
+@media ( max-width: 576px )
+{
+    .profile-dropdown {
+        min-width: 220px;
+    }
+    .network-pill{
+        gap: 8px;
+        padding: 12px 10px;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+
+}

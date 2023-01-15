@@ -1,0 +1,22 @@
+.phrase-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.recovery-phrase-content .phrase-container{
+    min-height: 100px;
+}
+.phrase-pill{
+    border: 1px solid #037dd619;
+    border-radius: 3px;
+    padding: 10px 10px;
+    color: #037dd6;
+    cursor: pointer;
+}
+.phrase-pill:hover{
+    border: 1px solid #037dd6;
+}
+.disable-link{
+    pointer-events: none;
+    background-color: #9cb7ca !important;
+}

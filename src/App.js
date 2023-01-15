@@ -13,6 +13,10 @@ import Intro from './pages/intro/Intro';
 import ImportWallet from './pages/import-wallet/ImportWallet';
 import NewWallet from './pages/new-wallet/NewWallet';
 import RecoveryPhrase from './pages/recovery-phrase/RecoveryPhrase';
+import ConfirmRecoveryPhrase from './pages/confirm-recovery-phrase/ConfirmRecoveryPhrase';
+import Home from './pages/home/Home';
+import CreateAccount from './pages/create-account/CreateAccount';
+import ImportAccount from './pages/import-account/ImportAccount';
 
 function App() {
   return (
@@ -28,9 +32,17 @@ function App() {
 
               <Route exact path = "/recovery-phrase" element = { <RecoveryPhrase/> } />
 
+              <Route exact path = "/confirm-recovery-phrase" element = { <ConfirmRecoveryPhrase/> } />
+
+              <Route exact path = "/home" element = { <Home/> } />
+
+              <Route exact path = "/create-account" element = { <CreateAccount/> } />
+
+              <Route exact path = "/import-account" element = { <ImportAccount/> } />
+
               <Route exact path = "/register" element= { <Register/> }  />
 
-              <Route exact path = "/login"  element= { <Auth Component={Login} />} />
+              <Route exact path = "/login"  element= { <Login/> }  />
 
             </Routes>
       </Router>
