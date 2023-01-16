@@ -1,0 +1,44 @@
+.send-page{
+    background-color: #F2F4F6;
+}
+.send-page input {
+    outline : none !important ;
+}
+.search-contact{
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 3px 10px 1px rgb(227, 227, 227);
+    min-height: 700px;
+    background-color: white;
+}
+.search-contact-top-bar {
+    padding: 14px;
+    background-color: #F2F4F6;
+}
+.search-contact-top-bar div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-contact-top-bar div a{
+    color: #037DD6;
+    font-size: 13px;
+    padding: 5px;
+}
+.search-field-wrapper {
+    position: relative;
+}
+.search-field-wrapper img{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.search-field-wrapper input{
+    padding: 14px;
+    padding-left: 34px;
+    font-size: 13px;
+    outline: none !important;
+    border-radius: 8px;
+    border: 1px solid rgb(227, 227, 227);
+}

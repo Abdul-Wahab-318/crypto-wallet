@@ -17,6 +17,7 @@ import ConfirmRecoveryPhrase from './pages/confirm-recovery-phrase/ConfirmRecove
 import Home from './pages/home/Home';
 import CreateAccount from './pages/create-account/CreateAccount';
 import ImportAccount from './pages/import-account/ImportAccount';
+import Send from './pages/send/Send';
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
               <Route exact path = "/create-account" element = { <CreateAccount/> } />
 
               <Route exact path = "/import-account" element = { <ImportAccount/> } />
+
+              <Route exact path = "/send" element = { <Send/> } />
 
               <Route exact path = "/register" element= { <Register/> }  />
 

@@ -1,0 +1,59 @@
+.wallet-action-btn-parent{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.wallet-action-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #037DD6;
+    border: none;
+}
+.wallet-action-btn-parent .send-btn img{
+    transform: rotate(-45deg);
+}
+.wallet-action-btn ~ span{
+    color: #037DD6;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.deposit-option-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 30px;
+    font-size: 14px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+.deposit-option-item:last-child{
+    border-bottom: none;
+}
+.deposit-option-item a{
+    text-align: center;
+}
+.deposit-link{
+    color: #037DD6;
+    background-color: white;
+    border: 1px solid #037DD6;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+@media ( max-width : 768px )
+{
+    .deposit-option-item{
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .deposit-option-item .deposit-link{
+        grid-column: 1/3;
+    }
+}
