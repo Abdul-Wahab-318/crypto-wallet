@@ -1,15 +1,14 @@
 import React from 'react'
-import Intro from '../../pages/intro/Intro';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , useLocation } from 'react-router-dom';
 
-export default function Auth( {Component} ) {
+export default function Auth( {Component , isLoggedIn} ) {
 
-    const navigate = useNavigate()
-    let isLoggedIn = false 
+  let navigate = useNavigate()
 
     React.useEffect(()=>{
+      console.log(!isLoggedIn)
         if ( !isLoggedIn )
-            navigate("login")
+            navigate("/login")
     },[])
 
   return (

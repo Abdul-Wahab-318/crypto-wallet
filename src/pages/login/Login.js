@@ -1,11 +1,19 @@
 import React , { useState } from 'react'
 import "./Login.css"
 import Logo from "../../components/Logo"
-import fox from "../../images/logo-sm.svg"
+import rooster from "../../images/logo-sm.png"
+import { useNavigate } from 'react-router-dom'
+export default function Login({setIsLoggedIn}) {
 
-export default function Login() {
-
+  const navigate = useNavigate()
   let [ password , setPassword ] = useState("")
+
+  let handleNavigation = () => {
+    setIsLoggedIn(true)
+    navigate('/home', {
+        state : { isLoggedIn : true }
+    })
+}
 
   return (
     <div className='login-page'>
@@ -20,15 +28,16 @@ export default function Login() {
         </header>
 
         <section className="login-content d-flex flex-column justify-content-center align-items-center mt-5 pt-3">
-          <img src={fox} width={100} alt="" />
+          <img src={rooster} width={100} alt="" />
           <h2 className='fw-bold mt-3'>Welcome Back !</h2>
           <p className="fs-14">The decentralized web awaits</p>
 
           <input value={password} onChange={(e)=> setPassword(e.target.value)} type="password" className='login-password-field' placeholder='Password' />
+          <a href="#/intro" className='text-blue fs-14 mt-2 p-2'>Dont have an account ? </a>
           {
             password.length < 8 ?
              <button className="disable-link btn-2 border-0 w-100">Unlock</button> : 
-             <a href="#/home" className="btn-2 w-100 text-center py-3">Unlock</a>
+             <button onClick={()=>handleNavigation()} className="btn-2 w-100 text-center py-3">Unlock</button>
           }
         </section>
 

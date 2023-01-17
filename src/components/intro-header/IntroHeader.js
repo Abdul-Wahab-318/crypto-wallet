@@ -8,7 +8,7 @@ export default function IntroHeader() {
         <header className="intro-header d-flex justify-content-start">
             <Logo/>                    
         </header>
-        <a href="#/" className='back-btn text-black d-flex align-items-center gap-1 mt-2'> <img src={left} width={10} alt="" /> Back</a>
+        <a href="#/intro" className='back-btn text-black d-flex align-items-center gap-1 mt-2'> <img src={left} width={10} alt="" /> Back</a>
     </>
   )
 }

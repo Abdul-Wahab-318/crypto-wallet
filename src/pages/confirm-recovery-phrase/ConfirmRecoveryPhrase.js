@@ -1,9 +1,12 @@
 import React , { useState } from 'react'
 import "./ConfirmRecoveryPhrase.css"
+import { useNavigate } from 'react-router-dom'
 import IntroHeader from '../../components/intro-header/IntroHeader'
 
-export default function ConfirmRecoveryPhrase() {
+export default function ConfirmRecoveryPhrase({setIsLoggedIn}) {
 
+    setIsLoggedIn(true)
+    const navigate = useNavigate()
     let [ words , setWords ] = useState(
         [ "air" , "university" , "is" , "a" , "terrible" , "place" , "why" 
         , "does" , "my" , "attendance" , "need" , "to" , "be" , "seventy" 
@@ -14,6 +17,12 @@ export default function ConfirmRecoveryPhrase() {
     let handleClick = ( word ) => {
         setWords( state => state.filter( el => el !== word ))
         setSelectedWords( state => [ ...state , word ])
+    }
+
+    let handleNavigation = () => {
+        navigate('/home', {
+            state : { isLoggedIn : true }
+        })
     }
 
   return (
@@ -44,7 +53,7 @@ export default function ConfirmRecoveryPhrase() {
                 </div>
                 
                 {
-                    words.length == 0 ? <a href="#/home" className="btn-2" > Confirm </a> : <span className='btn-2 disable-link'>Confirm</span>
+                    words.length == 0 ? <a onClick={()=>handleNavigation()} className="btn-2" > Confirm </a> : <span className='btn-2 disable-link'>Confirm</span>
                 }
                 
                 

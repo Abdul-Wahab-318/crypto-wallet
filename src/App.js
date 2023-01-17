@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React , {useState} from 'react'
 import './App.css';
 import {
   HashRouter as Router,
@@ -21,14 +21,20 @@ import Send from './pages/send/Send';
 import SendCheckOut from './pages/send-checkout/SendCheckOut';
 
 function App() {
+
+  let [ isLoggedIn , setIsLoggedIn ] = useState(false)
+
   return (
     <div className="App">
         <Router>
             <Routes>
 
               {/* <Route exact path = "/" element = { <Intro/> } /> */}
+              <Route exact path = "/intro" element = { <Intro/> } />
 
-              <Route exact path = "/" element = { <Auth Component={Home} /> } />
+              <Route exact path = "/" element = { <Auth isLoggedIn = {isLoggedIn} Component={Home} /> } />
+
+              <Route exact path = "/home" element = { <Auth isLoggedIn = {isLoggedIn} Component={Home} /> } />
 
               <Route exact path = "/import-wallet" element = { <ImportWallet/> } />
 
@@ -36,7 +42,7 @@ function App() {
 
               <Route exact path = "/recovery-phrase" element = { <RecoveryPhrase/> } />
 
-              <Route exact path = "/confirm-recovery-phrase" element = { <ConfirmRecoveryPhrase/> } />
+              <Route exact path = "/confirm-recovery-phrase"  element = { <ConfirmRecoveryPhrase setIsLoggedIn={setIsLoggedIn} /> } />
 
               <Route exact path = "/home" element = { <Home/> } />
 
@@ -50,7 +56,7 @@ function App() {
 
               <Route exact path = "/register" element= { <Register/> }  />
 
-              <Route exact path = "/login"  element= { <Login/> }  />
+              <Route exact path = "/login"  element= { <Login setIsLoggedIn={setIsLoggedIn} /> }  />
 
             </Routes>
       </Router>
