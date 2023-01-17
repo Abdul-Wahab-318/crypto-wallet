@@ -11,7 +11,7 @@ import Modal from 'react-bootstrap/Modal';
 
 export default function WalletActions() {
 
-    let [ethAmount , setEthAmount] = useState(0)
+    let [ethAmount , setEthAmount] = useState(0.399)
     const [modalShow, setModalShow] = React.useState(false);
 
     function BuyModal(props) {
@@ -71,7 +71,7 @@ export default function WalletActions() {
                     <img src={eth} width={30} alt="" />
                 </div>
                 <h2 className="eht-amount mt-3"> {ethAmount} ETH </h2>
-                <h6 className="dollar-amount text-muted">$0.00 USD</h6>
+                <h6 className="dollar-amount text-muted">$624.16 USD</h6>
                 <div className="wallet-action-btns mt-2 pt-2  d-flex justify-content-center align-items-center gap-4 ">
                     <button className="wallet-action-btn-parent d-flex justify-content-center align-items-center flex-column"
                      onClick={() => setModalShow(true)}>

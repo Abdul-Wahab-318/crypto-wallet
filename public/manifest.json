@@ -15,7 +15,7 @@
     "default_icon" : "logo192.png"
   } ,
   "background" : {
-    "service_worker" : "background.js" 
+    "service_worker" : "background.js"
   } ,
   "permissions" : [
     "tabs"
@@ -28,5 +28,8 @@
     },
     "default_title": "Meta Mask",
     "default_popup": "index.html"     
-  } 
+  } ,
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  }
 }

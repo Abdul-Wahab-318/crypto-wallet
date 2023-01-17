@@ -5,4 +5,9 @@ chrome.runtime.onInstalled.addListener((detail) => {
       });
     }
 });
+/*
+export let expandView = () => {
+  chrome.tabs.create({url: 'https://www.example.com'})
+}
 
+*/

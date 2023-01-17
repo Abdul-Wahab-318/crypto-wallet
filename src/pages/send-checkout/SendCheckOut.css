@@ -1,0 +1,23 @@
+.send-checkout-content{
+    max-width: 400px;
+    min-height: 80vh;
+    background-color: white;
+    margin: 0 auto;
+}
+.account-to-from{
+    position: relative;
+}
+
+.from-to-arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+}

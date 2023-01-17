@@ -51,6 +51,13 @@
 
 @media ( max-width: 576px )
 {
+    .header-inner{
+        padding: 16px 8px;
+    }
+    .profile-dropdown-parent {
+        margin-left: 5px !important;
+        z-index: 20;
+    }
     .profile-dropdown {
         min-width: 220px;
     }

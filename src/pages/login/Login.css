@@ -1,6 +1,10 @@
 .login-header{
     background-color: #F2F4F6;
     padding: 20px ;
+    min-width: 330px;
+}
+.login-page{
+    padding-bottom: 50px;
 }
 .login-content{
     max-width: 300px ;

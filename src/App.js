@@ -18,6 +18,7 @@ import Home from './pages/home/Home';
 import CreateAccount from './pages/create-account/CreateAccount';
 import ImportAccount from './pages/import-account/ImportAccount';
 import Send from './pages/send/Send';
+import SendCheckOut from './pages/send-checkout/SendCheckOut';
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
         <Router>
             <Routes>
 
-              <Route exact path = "/" element = { <Intro/> } />
+              {/* <Route exact path = "/" element = { <Intro/> } /> */}
+
+              <Route exact path = "/" element = { <Auth Component={Home} /> } />
 
               <Route exact path = "/import-wallet" element = { <ImportWallet/> } />
 
@@ -42,6 +45,8 @@ function App() {
               <Route exact path = "/import-account" element = { <ImportAccount/> } />
 
               <Route exact path = "/send" element = { <Send/> } />
+
+              <Route exact path = "/send-checkout" element = { <SendCheckOut/> } />
 
               <Route exact path = "/register" element= { <Register/> }  />
 

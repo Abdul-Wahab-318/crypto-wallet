@@ -67,3 +67,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.main-tabs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.main-tab{
+    padding: 14px 0;
+    border-bottom: 2px solid transparent;
+}
+.active-tab{
+    color: #037DD6;
+    border-bottom: 2px solid #037DD6 !important;
+}
