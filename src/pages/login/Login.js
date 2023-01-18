@@ -37,7 +37,7 @@ export default function Login({setIsLoggedIn}) {
           {
             password.length < 8 ?
              <button className="disable-link btn-2 border-0 w-100">Unlock</button> : 
-             <button onClick={()=>handleNavigation()} className="btn-2 w-100 text-center py-3">Unlock</button>
+             <button onClick={()=>handleNavigation()} className="btn-2 w-100 text-center py-3 border-0">Unlock</button>
           }
         </section>
 

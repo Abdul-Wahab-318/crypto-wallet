@@ -81,3 +81,22 @@
     color: #037DD6;
     border-bottom: 2px solid #037DD6 !important;
 }
+
+.icon-wrapper-rounded{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #037DD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-item:nth-child(2n)
+{
+    border: none !important;
+}
+
+.activity-item:last-child{
+    border-bottom: 1px solid #adb5bd !important;
+}
